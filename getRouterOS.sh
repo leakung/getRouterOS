@@ -26,7 +26,7 @@ architectures=("" "-arm64" "-arm" "-mipsbe" "-mmips" "-ppc" "-smips")
 # Loop through each architecture
 for arch in "${architectures[@]}"; do
     # Construct the full download URL for each architecture
-    download_url="$base_download_url/$version/routeros$arch-$version.npk"
+    download_url="$base_download_url/$version/routeros-$version$arch.npk"
     output_file="routeros$arch-$version.npk"
     
     # Check if the file already exists
